@@ -184,7 +184,6 @@ export default function ProductDetails(props) {
           </div>
         </div>
       </section>
-      <div className='desc'>
         <section className='product-full-detail'>
           <h3>{data.title}</h3>
           <div className='product-container'>
@@ -216,9 +215,6 @@ export default function ProductDetails(props) {
               69% nylon, 31% lycra</span>
           </div>
         </section>
-      </div>
-
-
       <Footer />
     </>
   )
