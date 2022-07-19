@@ -1,6 +1,8 @@
 import React from 'react';
 import { useRef, useState } from 'react';
 import Input from '../UI/Input';
+import pluse from '../../assets/icons/plus.svg'
+import minus from '../../assets/icons/minus.svg'
 export default function ProductDetailsForm(props) {
     const amountInputRef = useRef();
     const [amountIsValid, setAmountIsValid] = useState(true);
@@ -32,7 +34,7 @@ export default function ProductDetailsForm(props) {
     <form onSubmit={submitHandler}>
         <div className='d-flex'>
             <button class="minus-btn" type="button" name="button" onClick={mul}>
-                <img src="./../../../assets/icons/minus.svg" alt="" />
+                <img src={minus} alt="" />
             </button>
             <Input
             ref={amountInputRef}
@@ -46,7 +48,7 @@ export default function ProductDetailsForm(props) {
             }}
             />
             <button class="plus-btn" type="button" name="button" onClick={plus}>
-                <img src="./../../../assets/icons/plus.svg" alt="" />
+                <img src={pluse} alt="" />
             </button>
             {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
         </div>

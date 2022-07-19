@@ -1,4 +1,7 @@
 import React from 'react'
+import edit from '../../assets/icons/edit.svg'
+import trash from '../../assets/icons/trash.svg'
+import heart from '../../assets/icons/heart.svg'
 
 export default function CartItem(props) {
   return (
@@ -38,9 +41,9 @@ export default function CartItem(props) {
                             <div className="aem-GridColumn  aem-GridColumn--default--3  aem-GridColumn--phone--hide">
                                 <div className='card'>
                                     <div className='card-body'> 
-                                    <p><img src="./../../../assets/icons/edit.svg" alt="Icon" className='icon' />Edit item</p>
-                                    <p><img src="./../../../assets/icons/trash.svg" alt="Icon" className='icon' />Remove</p>
-                                    <p><img src="./../../../assets/icons/heart.svg" alt="Icon" className='icon' />Save</p>
+                                    <p><img src={edit} alt="Icon" className='icon' />Edit item</p>
+                                    <p><img src={trash} alt="Icon" className='icon' />Remove</p>
+                                    <p><img src={heart} alt="Icon" className='icon' />Save</p>
                                     </div>
                                 </div>
                             </div>

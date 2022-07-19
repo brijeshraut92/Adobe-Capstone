@@ -1,4 +1,5 @@
 import React from 'react'
+import banner from '../../assets/img/banner.png'
 
 export default function Banner() {
   return (
@@ -15,7 +16,7 @@ export default function Banner() {
                     </div>
                 </div>
                 <div className="aem-GridColumn  aem-GridColumn--default--5 aem-GridColumn--phone--12">
-                <img className="banner-img" src="assets/img/banner.png" alt="banner img" />
+                <img className="banner-img" src={banner} alt="banner img" />
                 </div>
                 </div>
             </div>

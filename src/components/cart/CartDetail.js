@@ -3,6 +3,7 @@ import CartContext from '../../redux/cart-context';
 import Footer from '../footer/Footer'
 import Header from '../header/Header'
 import CartItem from './CartItem';
+import car from '../../assets/img/pp.png'
 
 export default function CartDetail() {
 
@@ -100,7 +101,7 @@ export default function CartDetail() {
                                  {hasItems &&<button className='btn btn-blue addtocartBtn' ><i className="fa fa-lock"></i> CHECKOUT</button>}
                             </div>
                             <div className="addtocart">
-                                 {hasItems &&<img src="./../../../assets/img/pp.png " className='btn ppBtn ' ></img>}
+                                 {hasItems &&<img src={car} className='btn ppBtn ' ></img>}
                             </div>
                         </div>
                         </div>

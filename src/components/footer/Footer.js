@@ -1,4 +1,8 @@
 import React from "react";
+import instagram from '../../assets/icons/instagram.svg'
+import facebook from '../../assets/icons/facebook.svg'
+import twitter from '../../assets/icons/twitter.svg'
+import logo from '../../assets/icons/logo.png'
 export default function Footer() {
   return (
     <section className="footer">
@@ -35,13 +39,13 @@ export default function Footer() {
                         sed do eiusmod tempor incididunt ut labore et dolore.</li>
                 </ul>
                 <a>
-                  <img className="icons mr-rt-32" src="./../../../assets/icons/instagram.svg" alt="instagram-icon" />
+                  <img className="icons mr-rt-32" src={instagram} alt="instagram-icon" />
                 </a>
                 <a>
-                 <img className="icons mr-rt-32"  src="./../../../assets/icons/facebook.svg" alt="facebook-icon" />
+                 <img className="icons mr-rt-32"  src={facebook} alt="facebook-icon" />
                 </a>
                 <a>
-                 <img className="icons mr-rt-32"  src="./../../../assets/icons/twitter.svg" alt="twitter-icon" />
+                 <img className="icons mr-rt-32"  src={twitter} alt="twitter-icon" />
                 </a>
             </div>
           </div>
@@ -50,7 +54,7 @@ export default function Footer() {
         <div className="row">
           <div className="aem-Grid aem-Grid--default--12 aem-Grid--phone--12 reverse">
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--hide logo-center">
-              <img className="logo " src="./../../../assets/icons/logo.png" alt="logo" />
+              <img className="logo " src={logo} alt="logo" />
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
               <div className="center">

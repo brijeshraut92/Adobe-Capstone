@@ -10,9 +10,9 @@ function App() {
   return (
     <CartProvider>
       <Router>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/ProductDetails/:id" component={ProductDetails} />
-        <Route exact path="/CartDetail" component={CartDetail} />
+        <Route exact path="/Adobe-Capstone/" component={Home} />
+        <Route exact path="/Adobe-Capstone/ProductDetails/:id" component={ProductDetails} />
+        <Route exact path="/Adobe-Capstone/CartDetail" component={CartDetail} />
       </Router>
     </CartProvider>
   );

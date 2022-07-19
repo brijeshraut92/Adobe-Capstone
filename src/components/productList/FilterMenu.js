@@ -1,4 +1,6 @@
 import React from 'react';
+import sliders from '../../assets/icons/sliders.png'
+import '../../Styles/components/filterMenu.scss'
 
 export default function FilterMenu(props) {
     function openNav() {
@@ -12,7 +14,7 @@ export default function FilterMenu(props) {
   return (
     <>
     <a className="Filter-sort"  onClick={openNav}>
-        <img className="icon" src="./../../../assets/icons/sliders.png"  alt="profile icon"/>
+        <img className="icon" src={sliders}  alt="profile icon"/>
     Filter Results</a> 
     <div id="mySidepanel" class="sidepanel">
         <a href="#" class="closebtn" onClick={closeNav}>×</a>

@@ -1,6 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CartContext from "../../redux/cart-context";
+import logo from '../../assets/icons/logo.png'
+import search from '../../assets/icons/search.svg'
+import user from '../../assets/icons/user.svg'
+import cart from '../../assets/icons/cart.png'
 
 export default function Header() {
   const cartCtx = useContext(CartContext);
@@ -34,7 +38,7 @@ export default function Header() {
             
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--4 logo-center">
-            <Link to={`/`} className="links"><img className="logo " src="./../../../assets/icons/logo.png" alt="logo" />
+            <Link to={`/`} className="links"><img className="logo " src={logo} alt="logo" />
             </Link>
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--hide">
@@ -49,15 +53,15 @@ export default function Header() {
             <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--4 text-right">
               <div>
                 <a className="links mr-rt-32">
-                  <img className="icon" src="./../../../assets/icons/search.svg" alt="search icon"/>
+                  <img className="icon" src={search} alt="search icon"/>
                   <span className="custom--phone--hide">Search</span>
                 </a>
                 <a className="links mr-rt-32 custom--phone--hide">
-                  <img className="icon" src="./../../../assets/icons/user.svg"  alt="profile icon"/>
+                  <img className="icon" src={user}  alt="profile icon"/>
                   <span >Sign in</span>
                 </a>
-                <Link to={`/CartDetail`} className="links cart-bg">
-                <img className={`cart-icon ${btnIsHighlighted ? "bump" : ""} `} src="./../../../assets/icons/cart.png" alt="cart icon"/>
+                <Link to={`/Adobe-Capstone/CartDetail`} className="links cart-bg">
+                <img className={`cart-icon ${btnIsHighlighted ? "bump" : ""} `} src={cart} alt="cart icon"/>
                 {numberOfCartItems}
                 </Link>
               </div>

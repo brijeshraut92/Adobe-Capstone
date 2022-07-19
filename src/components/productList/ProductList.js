@@ -4,6 +4,8 @@ import axios from "axios";
 import Filter from "./Filter";
 import { Link } from "react-router-dom";
 import FilterMenu from "./FilterMenu";
+import sort from '../../assets/icons/sort.png'
+import heart from '../../assets/icons/heart.svg'
 
 export default function ProductList() {
     const [data, setData] = useState([]);
@@ -77,13 +79,13 @@ export default function ProductList() {
                 <div className="aem-GridColumn  aem-GridColumn--default--4 aem-GridColumn--phone--6 d-flex" key={item.id}>
                     <div className='card'>
 
-                        <Link to={`/ProductDetails/${item.id}`}>
+                        <Link to={`Adobe-Capstone/ProductDetails/${item.id}`}>
                             <div className='card-body'>
                                 <img src={item.image} alt="product-img" className='img-wrapper' />
                                 <p className='title'>{item.id}</p>
                                 <p className='title'>{item.title.slice(0, 17 - 3) + '...'}</p>
                                 <p className='price'>${item.price}</p>
-                                <img className="icon" src="./../../../assets/icons/heart.svg" alt="wishlist icon" />
+                                <img className="icon" src={heart} alt="wishlist icon" />
                             </div>
                         </Link>
 
@@ -262,7 +264,7 @@ export default function ProductList() {
                                     </div>
                                     <div className="aem-GridColumn  custom--desktop--hide aem-GridColumn--phone--6">
                                         <div className="filter">
-                                            <img className="sort-icon" src="./../../../assets/icons/sort.png" alt="profile icon" />
+                                            <img className="sort-icon" src={sort} alt="profile icon" />
                                             <a className="Filter-sort">Sort Products</a>
                                         </div>
                                     </div>
