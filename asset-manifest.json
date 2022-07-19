@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Adobe-Capstone/static/css/main.a1db60b5.css",
+    "main.js": "/Adobe-Capstone/static/js/main.53db4173.js",
+    "index.html": "/Adobe-Capstone/index.html",
+    "main.a1db60b5.css.map": "/Adobe-Capstone/static/css/main.a1db60b5.css.map",
+    "main.53db4173.js.map": "/Adobe-Capstone/static/js/main.53db4173.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1db60b5.css",
+    "static/js/main.53db4173.js"
+  ]
+}
