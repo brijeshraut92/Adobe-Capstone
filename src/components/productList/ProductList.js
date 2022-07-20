@@ -79,7 +79,7 @@ export default function ProductList() {
                 <div className="aem-GridColumn  aem-GridColumn--default--4 aem-GridColumn--phone--6 d-flex" key={item.id}>
                     <div className='card'>
 
-                        <Link to={`/ProductDetails/${item.id}`}>
+                        <Link to={`/Adobe-Capstone/ProductDetails/${item.id}`}>
                             <div className='card-body'>
                                 <img src={item.image} alt="product-img" className='img-wrapper' />
                                 <p className='title'>{item.id}</p>
