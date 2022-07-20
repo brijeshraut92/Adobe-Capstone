@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Adobe-Capstone/static/css/main.afe119b4.css",
-    "main.js": "/Adobe-Capstone/static/js/main.ae62b6c6.js",
+    "main.css": "/Adobe-Capstone/static/css/main.38b3f8a8.css",
+    "main.js": "/Adobe-Capstone/static/js/main.52d17874.js",
     "static/media/banner.png": "/Adobe-Capstone/static/media/banner.b1cb5e473e4762852a00.png",
     "static/media/cart.png": "/Adobe-Capstone/static/media/cart.9c816c6b923ef947a58e.png",
     "index.html": "/Adobe-Capstone/index.html",
@@ -15,11 +15,11 @@
     "static/media/minus.svg": "/Adobe-Capstone/static/media/minus.cbf9319be88b7e6c672be5b92a9c65f8.svg",
     "static/media/edit.svg": "/Adobe-Capstone/static/media/edit.d86fb5c57c99ad0d8312adf90283ac77.svg",
     "static/media/facebook.svg": "/Adobe-Capstone/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
-    "main.afe119b4.css.map": "/Adobe-Capstone/static/css/main.afe119b4.css.map",
-    "main.ae62b6c6.js.map": "/Adobe-Capstone/static/js/main.ae62b6c6.js.map"
+    "main.38b3f8a8.css.map": "/Adobe-Capstone/static/css/main.38b3f8a8.css.map",
+    "main.52d17874.js.map": "/Adobe-Capstone/static/js/main.52d17874.js.map"
   },
   "entrypoints": [
-    "static/css/main.afe119b4.css",
-    "static/js/main.ae62b6c6.js"
+    "static/css/main.38b3f8a8.css",
+    "static/js/main.52d17874.js"
   ]
 }
