@@ -108,7 +108,7 @@ export default function ProductDetails(props) {
               <li><a>Women’s</a></li>
               <li>Outerwear</li>
             </ul>
-            <p className='title'>{data.title.slice(0, 20 - 3) + '...'}</p>
+            <p className='title'>{data.title}</p>
             <p className='price'>${data.price}</p>
             <div class="rating">
               <div class="stars">
