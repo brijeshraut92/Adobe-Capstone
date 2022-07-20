@@ -94,12 +94,14 @@
         display: inline-block;
         button{
             border-style: none;
+            cursor: pointer;
         }
         a {
             color: black;
             float: left;
             padding: 8px 16px;
             text-decoration: none;
+             
           }
     }
       

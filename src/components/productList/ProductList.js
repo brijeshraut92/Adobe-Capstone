@@ -284,9 +284,7 @@ export default function ProductList() {
                             <div className="aem-Grid aem-Grid--12 d-flex justify-content-center">
 
                                 <div class="pagination">
-                                    <a >&laquo;</a>
-                                    {paginationCount}
-                                    <a >&raquo;</a>
+                                  {paginationCount}
                                 </div>
                             </div>
 
