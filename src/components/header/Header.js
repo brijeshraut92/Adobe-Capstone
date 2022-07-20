@@ -38,7 +38,7 @@ export default function Header() {
             
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--4 logo-center">
-            <Link to={`/`} className="links"><img className="logo " src={logo} alt="logo" />
+            <Link to={`/Adobe-Capstone`} className="links"><img className="logo " src={logo} alt="logo" />
             </Link>
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--hide">
