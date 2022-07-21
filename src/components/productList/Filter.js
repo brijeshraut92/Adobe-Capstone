@@ -7,11 +7,8 @@ export default function Filter(props) {
         <p className="tiltle">Filters</p>
         <div className="divider"></div>
         <p>Attribute</p>
-        {/* <input type="checkbox" onClick={() => props.filterSelection("")} id="Blank" name="Blank" value="Blank" /> */}
-        {/* <label htmlFor="Blank" > Reset</label><br></br> */}
         {props.categoryNames}
-        {/* <p><a href="">Show more</a></p> */}
-        <div className="divider"></div>
+        {/* <div className="divider"></div>
         <p>Attribute</p>
         <div className="option">
           <input type="checkbox" name="Option" value="Option" />
@@ -24,9 +21,7 @@ export default function Filter(props) {
           <label htmlFor="Option"> Option</label><br></br>
           <input type="checkbox" name="Option" value="Option" />
           <label htmlFor="Option"> Option</label><br></br>
-        </div>
-        {/* <p><a href="">Show more</a></p> */}
-
+        </div> */}
         <div className="divider"></div>
         <div className='filter-color'>
           <h3>Color</h3>
@@ -43,7 +38,7 @@ export default function Filter(props) {
             <div className='color-card' id='gradient' />
           </div>
         </div>
-        <div className="divider"></div>
+        {/* <div className="divider"></div>
         <p>Attribute</p>
         <div className="attribute">
           <input type="checkbox" id="Option" name="Option" value="Option" />
@@ -56,7 +51,7 @@ export default function Filter(props) {
           <label htmlFor="Option"> Option</label><br></br>
           <input type="checkbox" id="Option" name="Option" value="Option" />
           <label htmlFor="Option"> Option</label><br></br>
-        </div>
+        </div> */}
 
       </div>
     </div>

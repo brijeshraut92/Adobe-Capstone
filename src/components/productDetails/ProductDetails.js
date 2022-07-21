@@ -117,13 +117,7 @@ export default function ProductDetails(props) {
             <p className='title'>{data.title.slice(0,17-3)+'...'}</p>
             <p className='price'>${data.price}</p>
             <div className="rating">
-              {/* <div class="stars">
-                {arrStar.map((arrStar) => (
-                  <span class={"fa fa-star " + (arrStar ? arrStar : arrStar)}></span>
-                  ))}
-              </div> */}
               <Rate rating={data.rating.rate}/>
-              {/* <span class="review-no"> ({data.rating.count}) </span> */}
             </div>
             <p className='description'>{data.description}<a href=''></a></p>
             <div className="divider"></div>
