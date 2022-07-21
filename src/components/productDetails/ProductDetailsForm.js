@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRef, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import Input from '../UI/Input';
 import pluse from '../../assets/icons/plus.svg'
 import minus from '../../assets/icons/minus.svg'
@@ -7,6 +8,7 @@ export default function ProductDetailsForm(props) {
     const amountInputRef = useRef();
     const [amountIsValid, setAmountIsValid] = useState(true);
     const [add, setAdd] = useState(1);
+    let history=useHistory();
 
     const submitHandler = (event) => {
         event.preventDefault();
@@ -23,6 +25,7 @@ export default function ProductDetailsForm(props) {
           return;
         }
         props.onAddToCart(enteredAmountNumber);
+        history.push('/Adobe-Capstone/CartDetail')
       }
       const plus = () => {
         setAdd(add+1);
@@ -53,7 +56,7 @@ export default function ProductDetailsForm(props) {
             {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
         </div>
         <div className="addtocart">
-            <button className='btn btn-blue addtocartBtn' >Add To cart</button>
+            <button className='btn btn-blue addtocartBtn uppercase' >Add To cart</button>
         </div>
     </form>
   )

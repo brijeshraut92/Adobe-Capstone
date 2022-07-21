@@ -11,6 +11,12 @@ import breathable from '../../assets/icons/breathable.png'
 import fabric from '../../assets/icons/fabric.png'
 import nylon from '../../assets/icons/nylon.png'
 import sweat from '../../assets/icons/sweat.png'
+import {AiFillStar} from 'react-icons/ai'
+import {BiShareAlt} from 'react-icons/bi'
+import  Rate  from '../rating/Rate';
+
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+ 
 
 export default function ProductDetails(props) {
   const [data, setData] = useState([]);
@@ -108,17 +114,18 @@ export default function ProductDetails(props) {
               <li><a>Women’s</a></li>
               <li>Outerwear</li>
             </ul>
-            <p className='title'>{data.title}</p>
+            <p className='title'>{data.title.slice(0,17-3)+'...'}</p>
             <p className='price'>${data.price}</p>
-            <div class="rating">
-              <div class="stars">
+            <div className="rating">
+              {/* <div class="stars">
                 {arrStar.map((arrStar) => (
                   <span class={"fa fa-star " + (arrStar ? arrStar : arrStar)}></span>
-                ))}
-              </div>
-              <span class="review-no"> ({data.rating.count}) </span>
+                  ))}
+              </div> */}
+              <Rate rating={data.rating.rate}/>
+              {/* <span class="review-no"> ({data.rating.count}) </span> */}
             </div>
-            <p className='description'>{data.description.slice(0, 100 - 3) + '...'}<a href=''>Read more</a></p>
+            <p className='description'>{data.description}<a href=''></a></p>
             <div className="divider"></div>
             <p>Color</p>
             <a href="#" className="btn btn-black"></a>
@@ -141,7 +148,7 @@ export default function ProductDetails(props) {
             </div>
             <img className="icon mr-rt-32" src={heart} alt="wishlist icon" />
             <span className='mr-rt-32'>Save</span>
-            <i className='fa fa-share-alt '></i><span className='mr-rt-32'>Share</span>
+            <BiShareAlt/><span className='mr-rt-32'>Share</span>
           </div>
         </div>
       </div>

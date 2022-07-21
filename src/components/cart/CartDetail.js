@@ -1,10 +1,13 @@
 import React, { useContext } from 'react'
 import CartContext from '../../redux/cart-context';
 import Footer from '../footer/Footer'
+import { useHistory } from 'react-router-dom';
 import Header from '../header/Header'
 import CartItem from './CartItem';
 import car from '../../assets/img/pp.png'
 import { Link } from 'react-router-dom';
+import { BiLockAlt } from 'react-icons/bi'
+import {BsChevronDown} from 'react-icons/bs'
 
 export default function CartDetail() {
 
@@ -12,6 +15,11 @@ export default function CartDetail() {
 
     const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
     const hasItems = cartCtx.items.length > 0;
+
+    const clearCartHandler = (id) => {
+        cartCtx.clearCart(id);
+    };
+
 
     const cartItemRemoveHandler = (id) => {
         cartCtx.removeItem(id);
@@ -38,9 +46,22 @@ export default function CartDetail() {
             });
         }
     }
-
-
-
+    let content = <p>Your Cart is Empty.</p>;
+    if (cartCtx.items.length !== 0) {
+        content = cartCtx
+            .items.map((item) => (
+                <CartItem key={item.id}
+                    title={item.title}
+                    image={item.image}
+                    price={item.price}
+                    amount={item.amount}
+                    onRemove={cartItemRemoveHandler.bind(null, item.id)}
+                    onAdd={cartItemAddHandler.bind(null, item)}
+                    onClear={clearCartHandler.bind(null, item.id)}
+                />
+            ));
+    }
+    
     return (
         <>
             <Header />
@@ -100,7 +121,7 @@ export default function CartDetail() {
                                         </table>
                                         <Link to="/Adobe-Capstone">
                                             <div className="addtocart">
-                                                {hasItems && <button className='btn btn-blue addtocartBtn' ><i className="fa fa-lock"></i> CHECKOUT</button>}
+                                                {hasItems && <button className='btn btn-blue addtocartBtn' ><BiLockAlt /> CHECKOUT</button>}
                                             </div>
                                         </Link>
                                         <div className="addtocart">
@@ -114,28 +135,18 @@ export default function CartDetail() {
                     </div>
                     <div className='row'>
                         <div className='aem-Grid aem-Grid--12'>
-                            <div className='aem-GridColumn  aem-GridColumn--default--8 aem-GridColumn--phone--12 d-flex '>
-
-                                <button type="button" onClick={changeCollHandler} class="collapsible">Estimate your Shipping <i className='fa fa-angle-down float-right'></i></button>
-                                <div class="content">
-                                    <p>very bad example </p>
-                                </div>
-                                <button type="button" onClick={changeCollHandler} class="collapsible">Enter a Coupon Code <i className='fa fa-angle-down float-right'></i>  </button>
-                                <div class="content">
-                                    <p>very bad example </p>
-                                </div>
-                                <button type="button" onClick={changeCollHandler} class="collapsible">Apply Gift Card <i className='fa fa-angle-down float-right'></i>  </button>
-                                <div class="content">
-                                    <p>very bad example </p>
-                                </div>
-
+                            <div className='aem-GridColumn  aem-GridColumn--default--8 aem-GridColumn--phone--12 d-flex padding-lt-rt-32'>
+                                <button type="button" className="collapsible">Estimate your Shipping <i className='icon'><BsChevronDown/></i>   
+                                <span className='float-right custom--phone--hide'>Shipping to 91001   </span></button>
+                                <button type="button" className="collapsible">Enter a Coupon Code <i className='icon'><BsChevronDown/></i>  
+                                <span className='float-right custom--phone--hide'>- $100 Discount</span> </button>
+                                <button type="button" className="collapsible">Apply Gift Card <i className='icon'><BsChevronDown/></i> </button>
                             </div>
                             <div className='aem-GridColumn  aem-GridColumn--default--4 aem-GridColumn--phone--12 d-flex  col'>
 
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </section>

@@ -44,19 +44,19 @@ export default function ProductList() {
 
 
     }
-    let content = <p>Found no Data.</p>;
-    let categoryNames = <p>Found no Data.</p>;
-    let paginationCount = <p>Found no Data.</p>;
-    if (isLoading) {
-        content =
+    let content = <p> </p>;
+    let categoryNames = <p> </p>;
+    let paginationCount = <p></p>;
+    // if (isLoading) {
+    //     content =
 
-            categoryNames = <>
-                <input type="checkbox" id="Loading" name="Loading" value="Loading" />
-                <label htmlFor="Loading"> Loading...</label><br></br></>
-        paginationCount = <>Loading</>
+    //         categoryNames = <>
+    //             <input type="checkbox" id="Loading" name="Loading" value="Loading" />
+    //             <label htmlFor="Loading"> Loading...</label><br></br></>
+    //     paginationCount = <>Loading</>
 
 
-    }
+    // }
     if (data.length > 0) {
         if (latest) {
             data.sort((a, b) => parseFloat(a.id) - parseFloat(b.id));
@@ -82,8 +82,7 @@ export default function ProductList() {
                         <Link to={`/Adobe-Capstone/ProductDetails/${item.id}`}>
                             <div className='card-body'>
                                 <img src={item.image} alt="product-img" className='img-wrapper' />
-                                <p className='title'>{item.id}</p>
-                                <p className='title'>{item.title.slice(0, 17 - 3) + '...'}</p>
+                                <p className='title'>{item.title.slice(0,17-3)+'...'}</p>
                                 <p className='price'>${item.price}</p>
                                 <img className="icon" src={heart} alt="wishlist icon" />
                             </div>
@@ -95,9 +94,10 @@ export default function ProductList() {
         categoryNames =
             category.map((category) => (
                 <>
-
-                    <input type="checkbox" class="radioCheck" onClick={() => filterSelection(category)} id={category} value={category} />
-                    <label htmlFor={category}> {category}</label><br></br>
+                    <div className="filter-wrapper">
+                        <input type="checkbox" class="radioCheck" onClick={() => filterSelection(category)} id={category} value={category} />
+                        <label htmlFor={category}> {category}</label><br></br>
+                    </div>
                 </>
             ))
         paginationCount =
@@ -284,7 +284,7 @@ export default function ProductList() {
                             <div className="aem-Grid aem-Grid--12 d-flex justify-content-center">
 
                                 <div class="pagination">
-                                  {paginationCount}
+                                    {paginationCount}
                                 </div>
                             </div>
 

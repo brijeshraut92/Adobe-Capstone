@@ -35,6 +35,7 @@ export default function FilterMenu(props) {
 
         <div className="divider"></div>
             <p>Brand</p>
+            {/* <div className='attribute'>  */}
             <input type="checkbox"  id="Option" name="Option" value="Option" />
             <label htmlFor="Option"> Calvin Klein</label><br></br>
             <input type="checkbox"  id="Option" name="Option" value="Option" />

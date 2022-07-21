@@ -1,6 +1,19 @@
 @import "../variables";
 @import "../components/resp.scss";
 
+
+
+
+.rating {
+    .stars {
+        span {
+            // width: 10px;
+            // height: 10px
+            font-size: 20px;
+        }
+    }
+}
+
 .productDetails {
     display: flex;
 
@@ -250,7 +263,7 @@
             button[class*=btn] {
                 width: 30px;
                 height: 30px;
-                background-color: #E1E8EE;
+                color: #E1E8EE;
                 border-radius: 20px;
                 border: none;
                 cursor: pointer;
