@@ -9,7 +9,7 @@ export default function Banner() {
                 <div className="aem-Grid aem-Grid--default--8 aem-Grid--phone--12 reverse">
                 <div className="aem-GridColumn  aem-GridColumn--default--3 aem-GridColumn--phone--12 phn-container">
                     <div className='card'>
-                    <p className='text'>Women’s Outerwear
+                    <p className='text'>Women’s <br/>Outerwear
                     <div className='line'></div>
                     </p>
                     
