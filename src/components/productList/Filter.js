@@ -8,20 +8,6 @@ export default function Filter(props) {
         <div className="divider"></div>
         <p>Attribute</p>
         {props.categoryNames}
-        {/* <div className="divider"></div>
-        <p>Attribute</p>
-        <div className="option">
-          <input type="checkbox" name="Option" value="Option" />
-          <label htmlFor="Option" > Option</label><br></br>
-          <input type="checkbox" name="Option" value="Option" />
-          <label htmlFor="Option"> Option</label><br></br>
-          <input type="checkbox" name="Option" value="Option" />
-          <label htmlFor="Option"> Option</label><br></br>
-          <input type="checkbox" name="Option" value="Option" />
-          <label htmlFor="Option"> Option</label><br></br>
-          <input type="checkbox" name="Option" value="Option" />
-          <label htmlFor="Option"> Option</label><br></br>
-        </div> */}
         <div className="divider"></div>
         <div className='filter-color'>
           <h3>Color</h3>
@@ -38,9 +24,9 @@ export default function Filter(props) {
             <div className='color-card' id='gradient' />
           </div>
         </div>
-        {/* <div className="divider"></div>
+        <div className="divider"></div>
         <p>Attribute</p>
-        <div className="attribute">
+        {/* <div className="attribute">
           <input type="checkbox" id="Option" name="Option" value="Option" />
           <label htmlFor="Option"> Option</label><br></br>
           <input type="checkbox" id="Option" name="Option" value="Option" />

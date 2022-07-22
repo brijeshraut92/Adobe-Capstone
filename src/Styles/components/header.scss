@@ -1,6 +1,7 @@
 @import "../variables";
 @import "../components/resp.scss";
- .header {
+
+.header {
     display: flex;
     height: 80px;
 
@@ -19,7 +20,6 @@
         align-items: center;
         justify-content: center;
     }
-
     .links {
         font: var(--unnamed-font-style-normal) normal var(--unnamed-font-size-16) / var(--unnamed-line-spacing-24) var(--unnamed-font-family-muli);
         letter-spacing: var(--unnamed-character-spacing-0);
@@ -50,30 +50,14 @@
         text-decoration: none;
     }
 
-    .bump {
-        animation: bump 300ms ease-out;
-    }
-
-    @keyframes bump {
-        0% {
-            transform: scale(1);
-        }
-
-        10% {
-            transform: scale(0.9);
-        }
-
-        30% {
-            transform: scale(1.1);
-        }
-
-        50% {
-            transform: scale(1.15);
-        }
-
-        100% {
-            transform: scale(1);
-        }
+    .warning {
+        background-color: aqua;
+        color: #000;
+        font-size: 12px;
+        margin-left: -10px;
+        padding: 5px 5px;
+        vertical-align: top;
+        border-radius: 10px;
     }
 
     @media screen and (max-width: $Tablet) and (min-width: ($Mobile )) {
